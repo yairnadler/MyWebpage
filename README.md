@@ -8,3 +8,4 @@ The JavaScript is used to catch 'click' events and send email.
 There is a validation process in the "contact me" section where if an email is trying to be sent, the JavaScript code will check whether any of the fields are empty and whether the email input is a valid input. In addition, in the HTML code the input fields are marked as required.
 
 To open the website simply double-click the index.html icon
+
