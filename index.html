@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAIR NADLER</title>
+    <link rel="stylesheet" href="style.css"><link/>
+    <script src="https://kit.fontawesome.com/eade0d4638.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("vPFmS4KQNN-yff6dn");
+    })();
+    </script>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="navbar__container" id="navbar">
+                <a href="/" id="navbar__logo">YAIR NADLER</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="jump-home">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#CV" class="navbar__links" id="jump-CV">CV</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#more" class="navbar__links" id="jump-WhatElse">What Else?</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact-form" class="navbar__links" id="jump-contact">Contact Me</a>
+                </li>
+            </div>
+        </nav>
+
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home__container">
+                <div class="home__content">
+                    <h1 class="home__title">WELCOME</h1>
+                    <video autoplay loop muted class="backvid">
+                        <source src="images/backvid.MP4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!--CV-->
+        <section class="CV" id="CV">
+            <div class="CV__content">
+                <h1 class="CV__t">SOME TECHNICAL STUFF</h1>
+                <p class="CV__p">
+                    <i class="fa-solid fa-graduation-cap" id="fa"></i> Second year computer science student at Reichman University.
+                    <br>
+                    <i class="fa-solid fa-briefcase" id="fa"></i> Armed aiport security guard at Ben Gurion Airport for the past 3 years.
+                    <br>
+                    <i class="fa-solid fa-shield-halved" id="fa"></i> Special Forces combat soldier, commander and officer in the IDF between 2015 - 2019.
+                    <br>
+                </p>
+                <h1 class="CV__t">BUT WHO AM I REALLY?</h1>
+                <p class="CV__p">
+                    A hard worker, fast learner and a great team player
+                    <br>
+                    Eager to learn new things and happy to share what I already know
+                </p>
+                <h1 class="CV__t">FOR FULL VC CLICK HERE <i class="fa-solid fa-id-card" id="cv-icon"></i></h1>
+            </div>
+        </section>
+
+        <!--What Else?-->
+        <section class="WhatElse" id="WhatElse">
+            <div class="WhatElse__content">
+                <h1 class="WhatElse__t">TRAVELS</h1>
+                <!--Travel Map by Google Maps-->
+                <iframe src="https://www.google.com/maps/d/embed?mid=1VSXuTdcK4TcAkvDRNzv4JKcke3mfBEg&ehbc=2E312F" id="travel-map"></iframe>
+                <h1 class="WhatElse__t">MUSIC & PODCASTS</h1>
+                  <!--Playlist & Podcast by Spotify-->
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5Edo6aAnN38UDNzNqeMWWF?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" id="streaming"></iframe>
+                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/0R8OGY0eb6BJSepIApWB0z?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" id="streaming"></iframe>
+                  <h1 class="WhatElse__t">MY PROJECTS <i class="fa-brands fa-github" id="github-icon"></i></h1>
+            </div>
+        </section>
+
+        <!--Contact Me-->
+        <section class="contact" id="contact">
+            <div class="contact__content">
+                <h1 class="contact__title">CONTACT ME</h1>
+                <ul class = "contact__list">
+                    <li class="contact__item">
+                        <p class="contact__p">Email <i class="fa-solid fa-envelope" id="email-icon"></i></p>
+                    </li>
+                    <li class="contact__item">
+                        <p class="contact__p">LinkedIn <i class="fa-brands fa-linkedin" id="linkedin-icon"></i></p>
+                    </li>
+                    <li class="contact__item">
+                        <p class="contact__p">WhatsApp <i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i></p>
+                    </li>
+            </div>
+            <div class="popup">
+                <div class="popup__container">
+                    <i class="fa-solid fa-x" id="close"></i>
+                    <form id="contact-form">
+                        <h1 class="popup__title">CONTACT ME</h1>
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="message" rows="10" placeholder="Message" required></textarea>
+                        <button class="send__button" id="send" type="button">SEND</button>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <script src="main.js"></script>
+    </body>
+</html>
